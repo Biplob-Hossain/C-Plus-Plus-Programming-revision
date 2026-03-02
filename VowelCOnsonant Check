@@ -1,0 +1,29 @@
+#include<iostream>
+
+using namespace std;
+
+int main()
+{
+    char Ch;
+    cout<<"Enter any character ";
+
+    cin>>Ch;
+
+    if ((Ch>='a' && Ch<='z') || (Ch>='A' && Ch<='Z'))
+    {
+        if (Ch=='A' || Ch=='E' || Ch=='I' || Ch=='O' || Ch=='U' ||Ch=='a' || Ch=='e' || Ch=='i' || Ch=='o' || Ch=='u')
+        {
+           cout<<"This is a Vowel";
+        }
+        else
+        {
+            cout<<"This is a Consonant"<<endl;
+        }
+        
+    }
+
+    else
+    cout<<"This is not a character";
+    
+
+}
