@@ -1,0 +1,39 @@
+#include <iostream>
+#include <windows.h> // Windows Sleep()
+
+using namespace std;
+
+int main() {
+    // VS Code টার্মিনালের জন্য কালার কোডগুলো এভাবে ডিফাইন করুন
+    const char* RED = "\033[1;31m";
+    const char* GREEN = "\033[1;32m";
+    const char* YELLOW = "\033[1;33m";
+    const char* RESET = "\033[0m";
+
+    cout << "=== Traffic Signal System (VS Code Version) ===" << endl;
+
+    while (true) {
+        for (int road = 1; road <= 4; road++) {
+            cout << "\n-------------------------------------" << endl;
+            cout << "SIGNAL STATUS FOR ROAD: " << road << endl;
+
+            // হলুদ বাতি
+            cout << YELLOW << "[!] GET READY" << RESET << endl;
+            Sleep(2000); 
+
+            // সবুজ বাতি + ভিআইপি লজিক
+            cout << GREEN << "[>] GO! GO! GO!" << RESET << endl;
+            if (road == 4) {
+                cout << "(VIP Road - Extra Time Active)" << endl;
+                Sleep(8000); 
+            } else {
+                Sleep(4000); 
+            }
+
+            // লাল বাতি
+            cout << RED << "[X] STOP" << RESET << endl;
+            Sleep(1500);
+        }
+    }
+    return 0;
+}
