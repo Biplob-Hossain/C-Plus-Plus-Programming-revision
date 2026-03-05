@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int angle1, angle2,angle3;
+
+    cout<<"Input your triangle three angle value"<<endl;
+    cin>>angle1>>angle2>>angle3;
+
+    if ( angle1 + angle2 +angle3 ==180 && angle1>0 && angle2>0 && angle3>0)
+    {
+        cout<<"Yes! This is a Triangle ";
+    }
+    else
+    cout<<"Sorry!This is not a triangle";
+    
+
+}
