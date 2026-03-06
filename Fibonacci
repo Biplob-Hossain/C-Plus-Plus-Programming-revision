@@ -1,0 +1,26 @@
+#include<iostream>
+
+using namespace std;
+
+int main()
+{
+
+int n, n1=0,n2=1,fibo;
+cout<<"Enter how many number you wnat to check Fibonacci"<<endl;
+cin>>n;
+
+cout<<"Your Fibonacci series is ";
+for (int i = 0; i <=n; i++)
+{
+    cout<<n1;
+
+    fibo=n1+n2;
+
+    n1=n2;
+    n2=fibo;
+ 
+
+}
+
+
+}
